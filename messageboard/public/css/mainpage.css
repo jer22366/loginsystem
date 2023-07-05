@@ -1,0 +1,25 @@
+#mainpage {
+  margin-bottom: 20px;
+}
+
+#mainpage input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+#mainpage button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#mainpage button:hover {
+  background-color: #45a049;
+}
