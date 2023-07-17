@@ -2,7 +2,7 @@
 <div id='loginId'><p>會員登入系統</p></div>
 <div id="login">
   <input v-model="account" placeholder="請輸入帳號" style="width: 300px;"></input><br>
-  <input v-model="password" placeholder="請輸入密碼" style="width: 300px;"></input><br>
+  <input type = "password" v-model="password" placeholder="請輸入密碼" style="width: 300px;" ></input><br>
   <button v-on:click="submit">登入</button><br>
   <button v-on:click="register">創建新帳號</button>
 </div>
