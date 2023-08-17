@@ -1,19 +1,21 @@
 <head><link rel="stylesheet" href="{{ asset('css/refresh.css') }}"></head>
 <div id="refresh">
-    <div>名字<input v-model="name" placeholder="請輸入內容" style="width: 300px;"></input></div>
-    <div>帳號<input v-model="account" placeholder="請輸入內容" style="width: 300px;"></input></div>
-    <div>密碼<input v-model="password" placeholder="請輸入內容" style="width: 300px;"></input></div>
-    <div>性別
+    <div>名字:<input v-model="name" placeholder="請輸入內容" style="width: 300px;"></input></div>
+    <div>帳號:<input v-model="account" placeholder="請輸入內容" style="width: 300px;"></input></div>
+    <div>密碼:<input type = "password" v-model="password" placeholder="請輸入內容" style="width: 300px;"></input></div>
+    <div>性別:
         <input type="radio" id="one" value=1 v-model="sex" />
 	    <label for="male">男</label>
 
 	    <input type="radio" id="two" value=2 v-model="sex" />
 	    <label for="female">女</label>
     </div>
-    <div>生日<input v-model="birthday" placeholder="請輸入內容" style="width: 300px;"></input></div>
-    <div>信箱<input v-model="email" placeholder="請輸入內容" style="width: 300px;"></input></div>
-    <div>電話<input v-model="phone" placeholder="請輸入內容" style="width: 300px;"></input></div>
-    <div><button v-on:click="submit">確認</button></div>
+    <div>生日:<input v-model="birthday" placeholder="請輸入內容" style="width: 300px;"></input></div>
+    <div>信箱:<input v-model="email" placeholder="請輸入內容" style="width: 300px;"></input></div>
+    <div>電話:<input v-model="phone" placeholder="請輸入內容" style="width: 300px;"></input></div>
+    <div><button v-on:click="submit">確認</button>
+         <button v-on:click="back">返回</button>
+    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
@@ -66,6 +68,9 @@
                 .catch(error => {
                     console.log(error);
                 })
+            },
+            back:function(){
+                window.location = '/managermainpage';
             }
         },computed: {
             // 计算属性，根据选中的值返回对应的数值
