@@ -1,0 +1,7 @@
+create database phpmember;
+ALTER DATABASE `weatherdb` DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+create table memberdata(id int PRIMARY key AUTO_INCREMENT,m_name varchar(20), m_username varchar(20), 
+	m_password varchar(20), m_sex varchar(10), m_birthday datetime, m_email varchar(30), m_phone varchar(30), m_level varchar(10));
+
+INSERT INTO memberdata(m_name, m_username, m_password, m_sex, m_birthday, m_email, m_phone, m_level) VALUES (test,test123,test123,1,19970111,qq@q123.com,097846512,1);
