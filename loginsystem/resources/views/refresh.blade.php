@@ -71,8 +71,7 @@
                     phone:this.phone,
                     acnt:this.acnt
                 })
-                .then(response => {
-                    alert(response.data);
+                .then(response => {      
                     window.location = '/mainpage';
                 })
                 .catch(error => {

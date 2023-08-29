@@ -51,8 +51,7 @@
                         month:this.month,
                         day:this.day
                 })
-                .then(response => {
-                    alert(response.data);
+                .then(response => {     
                     window.location = '/';
                 })
                 .catch(function (error) {

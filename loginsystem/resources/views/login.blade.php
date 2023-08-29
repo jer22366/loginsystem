@@ -25,7 +25,6 @@ var sumbitlogin = new Vue({
         password:this.password
       }).then(response => {
           if(response.data==1){
-            alert(response.data);
             window.location = '/managermainpage'
           }else if(response.data==0){
             alert(response.data);

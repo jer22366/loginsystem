@@ -62,7 +62,6 @@
                     acnt:this.acnt
                 })
                 .then(response => {
-                    alert(response.data);
                     window.location = '/managermainpage';
                 })
                 .catch(error => {
