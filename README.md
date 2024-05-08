@@ -1,6 +1,8 @@
 # 前言
 
 先把phpmemberDb.txt 匯入資料庫程式才可運行，裡面有帳號可登入後台系統
+
+程式使用php larvarl 和vue來撰寫
 <br/>
 <br/>
 <br/>
